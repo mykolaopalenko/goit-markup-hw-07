@@ -19,6 +19,11 @@
       border-radius: 4px;
       color: $iconcolor;
       transition: border-color $animation;
+
+      &:hover,
+      &:focus {
+         border-color: $maincolor2;
+      }
    }
 
    // .company__icon
@@ -29,4 +34,11 @@
       fill: $iconcolor;
       transition: fill $animation;
    }
+}
+
+.company__link:hover .company__icon {
+   fill: $maincolor2;
+}
+.company__link:focus .company__icon {
+   fill: $maincolor2;
 }

@@ -47,6 +47,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: fill $animation;
+
+      &:hover,
+      &:focus {
+         fill: $aboutbuttonhover;
+      }
    }
    // .modal__button
    &__button {
@@ -97,7 +102,7 @@
       border: 1px solid rgba(33, 33, 33, 0.2);
       box-sizing: border-box;
       border-radius: 4px;
-      transition: border $animation;    
+      transition: border $animation;
    }
 
    &__textarea {
@@ -193,4 +198,22 @@
    border-color: $maincolor2;
    background-color: $maincolor2;
    background-origin: border-box;
+}
+
+
+
+.form__field:hover input,
+.form__field:hover textarea {
+   border: 1px solid $maincolor2;
+}
+.form__field:hover .form__svg {
+   fill: $maincolor2;
+}
+.form__field input:focus,
+.form__field textarea:focus {
+   border: 1px solid $maincolor2;
+   outline: none;
+}
+input:focus + .form__svg {
+   fill: $maincolor2;
 }

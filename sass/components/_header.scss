@@ -17,6 +17,10 @@
    color: $logocolor;
    margin-right: 93px;
 
+   &:focus {
+      color: $maincolor2;
+   }
+
    // .logo__web
 
    &__web {
@@ -40,7 +44,7 @@
 
    // .nav__url
 
-   &__url {
+   &__link {
       position: relative;
       display: inline-block;
       text-decoration: none;
@@ -52,10 +56,15 @@
       display: inline-block;
       padding: 32px 0;
       transition: color $animation;
+
+      &:hover,
+      &:focus {
+         color: $maincolor2;
+      }
       //
    }
 }
-.active {
+.nav__link--active {
    color: $aboutbuttonhover;
 
    &::after {
@@ -87,7 +96,7 @@
 
    // .contact__info
 
-   &__info {
+   &__link {
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
@@ -98,6 +107,11 @@
       align-items: center;
       padding: 32px 0 32px 0;
       transition: color $animation;
+
+      &:hover,
+      &:focus {
+         color: $maincolor2;
+      }
    }
 
    // .contact__icon

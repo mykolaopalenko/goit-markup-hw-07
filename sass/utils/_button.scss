@@ -14,4 +14,13 @@
    border: none;
    cursor: pointer;
    transition: color $animation, background-color $animation;
+
+   &:hover {
+      background-color: $aboutbuttonhover;
+      color: $bgcolor;
+      fill: $bgcolor;
+   }
+   &:focus {
+      background-color: $maincolor2;
+   }
 }

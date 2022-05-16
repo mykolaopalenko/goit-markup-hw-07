@@ -41,6 +41,10 @@
    text-decoration: none;
    display: inline-flex;
    margin-bottom: 20px;
+
+   &:focus {
+      color: $maincolor2;
+   }
 }
 .web {
    color: $maincolor2;
@@ -58,6 +62,10 @@
    display: block;
    width: 231px;
 
+   // &:hover,
+   // &:focus {
+   //    color: $maincolor2;
+   // }
    // .address__footer
 
    &__footer {
@@ -74,6 +82,11 @@
       color: $logotext;
       text-decoration: none;
       transition: color $animation;
+
+      &:hover,
+      &:focus {
+         color: $maincolor2;
+      }
    }
 }
 
@@ -82,6 +95,7 @@
 
    &__link {
       background-color: rgba(255, 255, 255, 0.1);
+
    }
    &__icon {
       fill: $logotext;
@@ -122,6 +136,11 @@
    color: rgba(255, 255, 255, 0.6);
    text-decoration: none;
    transition: color $animation;
+
+   &:hover,
+   &:focus {
+      color: $maincolor2;
+   }
 }
 
 .sent {
@@ -185,4 +204,14 @@
       fill: $logotext;
       transition: fill $animation;
    }
+}
+
+.sent__btn:hover .sent__img,
+.sent__btn:focus .sent__img {
+   fill: var(--bgcolor);
+}
+
+.sent__box:hover,
+.sent__box:focus {
+   border: 2px solid $maincolor2;
 }

@@ -1,94 +1,11 @@
 // button
-.button:hover {
-   background-color: $aboutbuttonhover;
-   color: $bgcolor;
-   fill: $bgcolor;
-}
-button:focus {
-   background-color: $maincolor2;
-}
 
-.nav__url:hover,
-.nav__url:focus,
-.logo:focus,
-.contact__info:hover,
-.contact__info:focus {
-   color: $maincolor2;
-}
-.network__link:hover,
-.network__link:focus {
-   background-color: $maincolor2;
-   color: $logotext;
-}
 
-.network__link:hover .network__icon {
-   fill: $logotext;
-}
-.network__link:focus .network__icon {
-   fill: $logotext;
-}
-.company__link:hover,
-.company__link:focus {
-   border-color: $maincolor2;
-}
-.company__link:hover .company__icon {
-   fill: $maincolor2;
-}
-.company__link:focus .company__icon {
-   fill: $maincolor2;
-}
 
-.address :hover,
-.address :focus,
-.logo-footer:focus {
-   color: $maincolor2;
-}
-.sent__btn:hover .sent__img,
-.sent__btn:focus .sent__img {
-   fill: var(--bgcolor);
-}
 
-.sent__box:hover,
-.sent__box:focus {
-   border: 2px solid $maincolor2;
-}
 
-// modal
-.modal__btn:hover,
-.modal__btn:focus {
-   fill: $aboutbuttonhover;
-}
 
-.form__field:hover input,
-.form__field:hover textarea {
-   border: 1px solid $maincolor2;
-}
-.form__field:hover .form__svg {
-   fill: $maincolor2;
-}
-.form__field input:focus,
-.form__field textarea:focus {
-   border: 1px solid $maincolor2;
-   outline: none;
-}
-input:focus + .form__svg {
-   fill: $maincolor2;
-}
+
 
 //  portfolio
 
-.filters__button:hover,
-.filters__button:focus {
-   background-color: $maincolor2;
-   color: $logotext;
-   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio__link:focus,
-.portfolio__link:hover {
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.portfolio__item:hover .overlay-text {
-   transform: translateY(0);
-}
